@@ -21,8 +21,13 @@ def calcular_dano(base_damage, crit_chance):
         return base_damage * 2
     return base_damage
 
+try:
+    print(calcular_dano(50, 1.5))   # rebenta aqui
 
-print(calcular_dano(50, 1.5))   # rebenta aqui
+except AssertionError as e:
+    print("Error: ", e)
+except ValueError as e:
+    print("Error: ", e)
 
 
 
@@ -38,9 +43,12 @@ def add_item(item):
         raise InventoryFull("Inventário cheio")
     inventory.append(item)
 
+try:
+    add_item("Gem") 
+    print(inventory)
 
-add_item("Gem") 
-print(inventory)
+except InventoryFull as e:
+    print("Error: ", e)
 
 
 #3
@@ -52,8 +60,13 @@ def login(username, password):
 
     return "Login bem sucedido"
 
+try:
+    print(login("", "12"))
 
-print(login("", "12"))
+except AssertionError as e:
+    print("Error: ", e)
+except Exception as e:
+    print("Error: ", e)
 
 
 #4
@@ -68,4 +81,9 @@ def move_player(x, y):
 
 
 pos = (2, 2)
-print(move_player(10, 1)) 
+
+try:
+    print(move_player(10, 1))
+
+except OutOfMap as e:
+    print("Error: ", e)
