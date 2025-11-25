@@ -1,0 +1,16 @@
+{
+    "highscores": [
+        {
+            "name": "Paul",
+            "score": 90000
+        },
+        {
+            "name": "Aron",
+            "score": 1200
+        },
+        {
+            "name": "Luna",
+            "score": 950
+        }
+    ]
+}
