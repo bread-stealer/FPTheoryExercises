@@ -59,3 +59,5 @@ for line in merged_log:
 print(">>> Total Count Number of Lines for Each Day <<<")
 print("Total of Lines in Day1: ", day1_count)
 print("Total of Lines in Day2: ", day2_count)
+
+# 
