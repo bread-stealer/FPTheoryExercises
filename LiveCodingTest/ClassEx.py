@@ -75,7 +75,6 @@ class Character:
             f"Attack:{self.attack}, Defense:{self.defense}")
 
 
-# TEST YOUR CODE HERE
 if __name__ == "__main__":
     # Create characters
     hero = Character("Aria", "warrior", 1)

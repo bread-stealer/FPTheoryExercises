@@ -17,7 +17,6 @@ Try different approaches!
 numbers = [5, 10, -3, 7, 2]
 
 # TODO: Modify the 'numbers' list here to make it sum to 0
-# Your code here:
 sum_num = (sum(numbers) * 0)
 print(f"List Multiplying for Zero: {sum_num}") # Multiply the sum by 0
 
